@@ -13,14 +13,121 @@
    <legend>Advanced Art Work Search</legend>
    
     <div id="searchBox">
-     
+    <input type="text" placeholder="Search titles" id="title" name="titles">
+        <label for="radio"> Subject:</label>
+        <input type="radio" id="History" name="subject" value="History">
+        <label for="radio"> History</label>
+            <input type="radio" id="Landscape" name="subject" value="Landscape">
+        <label for="radio"> Person</label>
+            <input type="radio" id="person" name="person" value="person">
+        <label for="Landscape">Landscape</label>
+            <select name="genre" id="genre">
+                <option value="0">Select Genre</option>
+                <option value="1">Baroque</option>
+                <option value="2">Renaissance</option>
+                <option value="3">Realism</option>
+        </select>
+        <input type="submit" class="submit" value="Filter">
     </div>   
     <div id="settingsBox">
-
-
+        <select name="bulk action" id="bulk action">
+            <option value="0">Bulk Action</option>
+            <option value="1">Archive</option>
+            <option value="2">Edit</option>
+            <option value="3">Collection</option>
+        </select>
+        <input type="submit" class="submit" value="Apply to All">
     </div>
     <div id="paintingBox">
-
+        <table>
+            <tr>
+                <th colspan="7" id="paintings">Painting</th>
+            </tr>
+            <tr id="bar">
+                <td></td>
+                <td></td>
+                <th> Title</th>
+                <th>Artist</th>
+                 <th> Year</th>
+                 <th> Genre</th>
+                 <th> Action</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name= "index[0]" value="0"></td>
+                <td><img src="images/125010.jpg" title="1" class="thumbnail"></td>
+                <td class = "title">Portait of Alidea Christina Assink</td>
+                <td>Kruseman, Jan</td>
+                <td>1833</td>
+                <td>Realism</td>
+                <td>
+                    <div class="button">
+                        <button class="edit"><a href=""><img src="images/edit.png"></a></button>
+                        <button class=""><a href=""><img src="images/archive.png"></a></button>
+                        <button class=""><a href=""><img src="images/delete.png"></a></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name= "index[0]" value="10"></td>
+                <td><img src="images/125020.jpg" title="2" class="thumbnail"></td>
+                <td class = "title">Protait of William II,King of the Netherlands</td>
+                <td>Kruseman, Jan</td>
+                <td>1833</td>
+                <td>Realism</td>
+                <td>
+                    <div class="button">
+                        <button class="edit"><a href=""><img src="images/edit.png"></a></button>
+                        <button class=""><a href=""><img src="images/archive.png"></a></button>
+                        <button class=""><a href=""><img src="images/delete.png"></a></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name= "index[1]" value="20"></td>
+                <td><img src="images/130020.jpg" title="3" class="thumbnail"></td>
+                <td class = "title">Three girls from the amsterdamn Orphanage</td>
+                <td>Schwartze, T</td>
+                <td>1885</td>
+                <td>Realism</td>
+                <td>
+                    <div class="button">
+                        <button class="edit"><a href=""><img src="images/edit.png"></a></button>
+                        <button class=""><a href=""><img src="images/archive.png"></a></button>
+                        <button class=""><a href=""><img src="images/delete.png"></a></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name= "index[2]" value="30"></td>
+                <td><img src="images/127010.jpg" title="4" class="thumbnail"></td>
+                <td class = "title">The Windmill at Wijk bij Durrstede</td>
+                <td>Ruisdel, Jacob van</td>
+                <td>1670</td>
+                <td>Dutch Golen Age</td>
+                <td>
+                    <div class="button">
+                        <button class="edit"><a href=""><img src="images/edit.png"></a></button>
+                        <button class=""><a href=""><img src="images/archive.png"></a></button>
+                        <button class=""><a href=""><img src="images/delete.png"></a></button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name= "index[4]" value="40"></td>
+                <td><img src="images/128010.jpg" title="5" class="thumbnail"></td>
+                <td class = "title">Morning Ride Along the Beach</td>
+                <td>Mauve, Anton</td>
+                <td>1871</td>
+                <td>Realism</td>
+                <td>
+                    <div class="button">
+                        <button class="edit"><a href=""><img src="images/edit.png"></a></button>
+                        <button class=""><a href=""><img src="images/archive.png"></a></button>
+                        <button class=""><a href=""><img src="images/delete.png"></a></button>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </div> 
 </fieldset>  
 </form>

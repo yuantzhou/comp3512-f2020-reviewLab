@@ -5,12 +5,15 @@
 body, section, header, div, p, h1, h2, h3, ul, li {
    margin: 0;
    padding: 0;
+    font-weight: 800,600,400,300;
+    font-size: 36px,24px,18px;
 }
 body {
    font-family: 'Open Sans', sans-serif;
    box-sizing: border-box;
    background-color: #e4e7eb;
    font-weight: 300;
+    padding: 40px;
 }
 header {
    margin-left: 20px;
@@ -21,6 +24,101 @@ h1 {
    font-size: 42px;
    padding: 10px 0;
 }
+h3 {
+    font-size: 40px;
+    padding: 15px;
+}
 
+section {
+    width: 910px;
+    box-shadow: 0 0 20px grey;
+    margin: 20px auto 20px auto;
+}
+div {
+    display: inline-block;
+}
+
+span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.column{
+    display: inline-block;
+    text-align: center;
+    width: 300px;
+    background-color: white;
+}
+
+ul span{
+    font-weight: bold;
+    font-size: 11px;
+}
+.featured{
+    color: white;
+    background-color: #2F4F4F;
+}
+.column li, .featured li{
+    padding: 15px;
+}
+ul{
+    list-style-type: none;
+}
+.standard, .free, .professional{
+    font-weight: 800;
+    font-size: 30px;
+}
+.free{
+    font-size: 40px;
+    background-color: #5BB189;
+}
+.standard{
+    font-size: 40px;
+    background-color: #4B0082;
+    
+}
+.professional{
+    font-size: 40px;
+    background-color: #EC632A;
+}
+section li:nth-child(even){
+    background-color:rgba(47,59,64,0.35);
+}
+.standard span, .free span , .professional span{
+    font-weight:100;
+}
+
+a {
+    background-color: #3A6BA5;
+    color: white;
+    padding: 8px 90px;
+}
+.column div{
+    padding:36px 0px;
+}
+#confidence{
+    display: block;
+    width: 910px;
+    margin: 20px auto 20px auto;
+    background-color:#2F4F4F;
+    padding: 25px 20px;
+    color: white;
+}
+#confidence h2{
+    font-size: 30px;
+}
+#confidence li{
+background-image: url(checkmark.svg);
+background-repeat: no-repeat;
+background-size: 24px;
+padding: 5px;
+padding-left: 30px;
+    font-weight: 600;
+}
+#confidence a{
+    padding: 0;
+    background-color:inherit;
+    font-style: italic;
+}
 /* add styles here */
 

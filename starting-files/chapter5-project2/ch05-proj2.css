@@ -16,9 +16,9 @@ h1, h2, h3, nav, footer {
 legend {
    background-color: var(--color-primary-1-900) ;
    color: var(--color-primary-1-050);
-   margin: 0 auto;
-   width: 90%;
-   padding: 0.25em;
+   margin: 0;
+    width: 95%;
+    padding: 0.25em;
    text-align: center;
    font-weight: 500;
    font-size: 24px;
@@ -27,34 +27,74 @@ fieldset {
    margin: 0.5em auto;
    background-color: var(--color-neutral-050);
    border: solid 1px var(--color-neutral-100);
-   width: 90%;
+   width: 95%;
+   
 }
 
 div#searchBox, div#settingsBox, div#paintingBox {
    background-color: var(--color-neutral-100);
-
+ margin: 10px;
+    width: 95%;
+    padding: 20px;
+   
 }
 
-
+select{
+    border: 0px;
+}
+input{
+    border: 0px;
+}
 
 div#paintingBox { 
 
    background-color: var(--color-neutral-100);
+    
    }
 
-
-
-table thead {
-   background-color: var(--color-primary-1-050) ;
+img{
+    height: 70px;
+    width: 70px;
 }
-
+table{
+    width: 100%;
+    border-spacing: 0px;
+}
+ td {
+  border-bottom: 2px solid #ddd;
+}
 
 caption {
    background-color: var(--color-primary-1-800);
    color: var(--color-primary-1-050);
 
 }
-
-
-
-
+#paintings{
+     background-color: var(--color-primary-1-900) ;
+   color: var(--color-primary-1-050);
+}
+.submit{
+    padding: 3px;
+   background-color: #0E7C86;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+}
+#bar{
+    text-align: left;
+    background-color: #38BEC9;
+    margin: 0px;
+    
+}
+.button img{
+    height: 20px;
+    width: 20px;
+}
+.edit{
+    background-color: #2CB1BC;
+    border: 1.5px;
+    border-style: solid;
+}
+.title{
+    font-style: italic;
+}
